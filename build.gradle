@@ -19,13 +19,14 @@ repositories {
 }
 
 dependencies {
-//    implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
-    implementation 'org.springframework.boot:spring-boot-starter-thymeleaf'
-    implementation 'org.springframework.boot:spring-boot-starter-web'
+    implementation 'org.springframework.boot:spring-boot-starter-data-jpa' //jpa 라이브러리
+    implementation 'org.springframework.boot:spring-boot-starter-thymeleaf' //타임리프
+    implementation 'org.springframework.boot:spring-boot-starter-web'  //스프링 부트웹
 //    implementation group: 'org.json', name: 'json', version: '20220320'
+    runtimeOnly 'com.h2database:h2'
 
-    compileOnly 'org.projectlombok:lombok'
-    annotationProcessor 'org.projectlombok:lombok'
+    compileOnly 'org.projectlombok:lombok' //롬복  라이브러리
+    annotationProcessor 'org.projectlombok:lombok' ///롬복 실행 라이브러리
 
 //    testImplementation 'org.springframework.boot:spring-boot-starter-test'
 //    runtimeOnly 'mysql:mysql-connector-java'
